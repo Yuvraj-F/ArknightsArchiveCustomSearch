@@ -1,10 +1,10 @@
 # Custom Search For the Arknights Archive on Tumblr
 This search function is made specifically for the [Arknights Archive blog](https://arknights-archive.tumblr.com/) on Tumblr to give users easy access to normal search and searching using tags. 
 
-## customSearchSnippet.html
+## How to use
+### customSearchSnippet.html
 This file contains the entirety of the custom search code by itself. 
 
-## How to use
 ### The Meta Tag
 The meta tag can be placed anywhere near the rest of the meta tags near the top of the file. This creates a toggle button in the tumblr edit theme menu that allows you to turn custom search on and off easily like the rest of the custom options.
 <img width="586" height="163" alt="image" src="https://github.com/user-attachments/assets/82a5371b-6def-4bef-a427-c94e6c9e5ab8" />
