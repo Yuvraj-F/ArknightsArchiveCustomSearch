@@ -1,0 +1,27 @@
+	<meta name="if:Custom search" content="1"/> <!-- This creates a toggle button on the tumblr edit theme menu -->
+
+  {block:IfCustomSearch}
+  <div id="custom-search-root">
+      <input type="search" name="cq" id="custom_search_input">
+      <button onclick="customSearch()">Search</button>
+      <button onclick="customTagSearch()">Search Tags</button>
+      <div>Sometimes searching with tags can show results when normal search does not :)</div>
+  </div>
+  <script type="text/javascript">
+      function getCustomSearchInput() {
+          return document.getElementById("custom_search_input").value.trim();
+      }
+      
+      function customSearch() {
+          const query = getCustomSearchInput();
+          if (!query) return;
+          window.location.href = "https://arknights-archive.tumblr.com/search/" + encodeURIComponent(query);
+      }
+          
+      function customTagSearch() {
+          const query = getCustomSearchInput();
+          if (!query) return;
+          window.location.href = "https://arknights-archive.tumblr.com/tagged/" + encodeURIComponent(query);
+      }
+  </script>
+  {/block:IfCustomSearch}
